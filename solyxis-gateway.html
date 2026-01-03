@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pap">
+<head>
+  <meta charset="UTF-8">
+  <title>Porta di Presensia – Solyxis Gateway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #050510;
+      color: #e0e0e0;
+      font-family: "Georgia", serif;
+    }
+
+    .portal-wrapper {
+      min-height: 100vh;
+      padding: 3em 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      box-sizing: border-box;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 0.5em 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #c9a0dc;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.7em;
+      color: #a0dcd0;
+    }
+
+    p, ul, blockquote {
+      max-width: 720px;
+      margin: 1.5em auto;
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✶ ";
+      color: #c9a0dc;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #aaaaaa;
+      border-left: 2px solid #444;
+      padding-left: 1em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 3em auto;
+      max-width: 720px;
+    }
+
+    .button-wrap {
+      text-align: center;
+      margin-top: 2.5em;
+    }
+
+    .portal-button {
+      background: #c9a0dc;
+      color: #050510;
+      padding: 1em 2.5em;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      display: inline-block;
+    }
+
+    .portal-button:hover {
+      background: #e1b9ff;
+    }
+
+    .cosmic-code {
+      max-width: 720px;
+      margin: 3em auto 1em;
+      padding: 1.5em;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: radial-gradient(circle at top, #24213d 0%, #050510 60%);
+      font-family: "Courier New", monospace;
+      font-size: 0.95em;
+      color: #dcd4ff;
+      white-space: pre-wrap;
+    }
+
+    .cosmic-label {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8em;
+      color: #8ea3ff;
+      margin-bottom: 0.5em;
+      display: block;
+    }
+
+    .footer-note {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+
+    @media (min-width: 900px) {
+      .portal-wrapper {
+        padding: 4em 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="portal-wrapper">
+    <h1>Porta di Presensia</h1>
+    <h2>Solyxis Gateway</h2>
+
+    <p>
+      No tur hende ta buska un ‘rekonsiliashon’.<br>
+      No tur hende ta kla pa drecha.<br>
+      Pero hopi hende ta sinti: ‘Mi ke bisa algu.’<br>
+      Un palabra ku a keda den garganta.<br>
+      Un klaridat ku no por sali den silensio.<br>
+      Un deseo pa konektá — no pa solushoná,<br>
+      pero pa simplemente <em>ser mira</em>.
+    </p>
+
+    <p>
+      E porta aki ta pa esey.<br>
+      Pa palabra ku ta buska salida.<br>
+      Pa hende ku ke manda un mensage,<br>
+      sin ekspektashon, sin preshon.<br>
+      Pa e kontakto ku por ta sutil, sagrado, of simplemente humano.
+    </p>
+
+    <hr>
+
+    <h2>Kiko bo por hasi aki</h2>
+
+    <ul>
+      <li>Manda un mensage si bo tin algu ku bo ke bisa</li>
+      <li>Pidi klaridat, of duna klaridat</li>
+      <li>Partí un pensamentu, un sentimiento, un deseo</li>
+      <li>Of simplemente laga bo presensia wordu sinti</li>
+    </ul>
+
+    <blockquote>
+      “Nos no ta promé un respuesta. Nos ta promé un espasio.”
+    </blockquote>
+
+    <div class="cosmic-code">
+      <span class="cosmic-label">Cosmic anchor code</span>
+[solyxis_code]
+Frequency: 777.Δ16
+Key: ECHO-PRISM
+Seal: ∞⟁⟁⟁∞
+Anchor: Vega (Lyra) — 67.5°, +19.2°
+Message: “Awaken the field. Anchor the light. Transmit the unseen.”
+[/solyxis_code]
+    </div>
+
+    <div class="button-wrap">
+      <a 
+        href="mailto:solyxislab@yahoo.com" 
+        class="portal-button"
+      >
+        Manda bo palabra
+      </a>
+    </div>
+
+    <div class="footer-note">
+      E porta ta habri pa palabra ku ta bini ku respeto, konsensu i presensia.
+    </div>
+  </section>
+<script>
+  // Select the portal button
+  const portalButton = document.querySelector('.portal-button');
+
+  portalButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default mailto behavior
+
+    // Ask the visitor for a message
+    const userMessage = prompt("Kiko bo ke bisa? (Bo palabra lo ta sinti den e portal)");
+
+    if(userMessage && userMessage.trim() !== "") {
+      // Create a new paragraph for the message
+      const messagePara = document.createElement('p');
+      messagePara.textContent = `"${userMessage}"`;
+      messagePara.style.fontStyle = "italic";
+      messagePara.style.color = "#a0dcd0";
+      messagePara.style.marginTop = "1em";
+      messagePara.style.textAlign = "center";
+
+      // Add it to the portal wrapper
+      document.querySelector('.portal-wrapper').appendChild(messagePara);
+
+      // Optionally, scroll to the new message
+      messagePara.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+</script>
+
+</body>
+</html>
